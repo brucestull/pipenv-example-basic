@@ -10,3 +10,5 @@
 
 ## Process:
 1. [Install `pipenv`](notes/install_pipenv.md)
+
+1. [Create `pipenv` virtual environment](notes/create_pipenv_virtual_environment.md)
