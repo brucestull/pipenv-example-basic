@@ -104,6 +104,20 @@ Sample location:
 1. Add location of this specific `Scripts` directory `C:\Users\User\AppData\Roaming\Python\Python310\Scripts` to user `PATH` variable:  
   * Windows Key >> search 'path' >> select 'Edit the system environment variables' >> choose 'Environment Variables' button near bottom right >> double click 'path' line in 'User variables for User' >> click 'New' >> paste in absolute route copied previously into new line >> click 'OK' to close "Edit environment variable" dialogue >> click 'OK' to close "Environment variables" page >> click 'OK' to close "System Properties" page.
 
+    * ![edit_system_environment_variables_choice](https://user-images.githubusercontent.com/47562501/170906540-c47125b3-4f33-4bbc-a407-2fc206a9008c.png)
+
+    * ![environment_variables_button](https://user-images.githubusercontent.com/47562501/170906596-90fa146e-e74b-486f-97d4-23ed83b67c03.png)
+
+    * ![click_path_variable](https://user-images.githubusercontent.com/47562501/170906635-20d23679-bdb1-4721-a4e3-be7d44082dd3.png)
+
+    * ![add_scripts_directory_location_to_path](https://user-images.githubusercontent.com/47562501/170906653-4a5d3ec1-390e-460a-9073-9351a61aafb7.png)
+
+    * ![click_ok_to_save_path](https://user-images.githubusercontent.com/47562501/170906678-429f4084-b125-4ebb-9bd5-401139074908.png)
+
+    * ![click_ok_to_close_user_variables](https://user-images.githubusercontent.com/47562501/170906707-5d55bce6-05cc-49e7-b868-9139dc81f4b8.png)
+
+    * ![click_ok_to_close_system_properties_dialog](https://user-images.githubusercontent.com/47562501/170906732-3f11e3f1-7a24-44d8-9233-6f59d6598144.png)
+
 1. Verify `pipenv` install:  
 `pipenv --version`  
 Sample output:  
