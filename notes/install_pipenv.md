@@ -19,40 +19,43 @@ Sample ouput:
 
 1. Check currently installed packages:  
 `pip list`  
-  ```
-  PS C:\Users\User\Programming\pipenv-example-basic> pip list
-  Package    Version
-  ---------- -------
-  pip        22.0.4
-  setuptools 58.1.0
-  WARNING: You are using pip version 22.0.4; however, version 22.1.1 is available.
-  You should consider upgrading via the 'C:\Users\User\AppData\Local\Programs\Python\Python310\python.exe -m pip install --upgrade pip' command.
-  ```
+Sample output:  
+    ```
+    PS C:\Users\User\Programming\pipenv-example-basic> pip list
+    Package    Version
+    ---------- -------
+    pip        22.0.4
+    setuptools 58.1.0
+    WARNING: You are using pip version 22.0.4; however, version 22.1.1 is available.
+    You should consider upgrading via the 'C:\Users\User\AppData\Local\Programs\Python\Python310\python.exe -m pip install --upgrade pip' command.
+    ```
 
-1. Upgrade `pip`:  
-`C:\Users\User\AppData\Local\Programs\Python\Python310\python.exe -m pip install --upgrade pip`  
-  ```
-  PS C:\Users\User\Programming\pipenv-example-basic> C:\Users\User\AppData\Local\Programs\Python\Python310\python.exe -m pip install --upgrade pip
-  Requirement already satisfied: pip in c:\users\user\appdata\local\programs\python\python310\lib\site-packages (22.0.4)
-  Collecting pip
-    Using cached pip-22.1.1-py3-none-any.whl (2.1 MB)
-  Installing collected packages: pip
-    Attempting uninstall: pip
-      Found existing installation: pip 22.0.4
-      Uninstalling pip-22.0.4:
-        Successfully uninstalled pip-22.0.4
-  Successfully installed pip-22.1.1
-  ```
+  1. Upgrade `pip`:  
+  `C:\Users\User\AppData\Local\Programs\Python\Python310\python.exe -m pip install --upgrade pip`  
+  Sample output:  
+      ```
+      PS C:\Users\User\Programming\pipenv-example-basic> C:\Users\User\AppData\Local\Programs\Python\Python310\python.exe -m pip install --upgrade pip
+      Requirement already satisfied: pip in c:\users\user\appdata\local\programs\python\python310\lib\site-packages (22.0.4)
+      Collecting pip
+        Using cached pip-22.1.1-py3-none-any.whl (2.1 MB)
+      Installing collected packages: pip
+        Attempting uninstall: pip
+          Found existing installation: pip 22.0.4
+          Uninstalling pip-22.0.4:
+            Successfully uninstalled pip-22.0.4
+      Successfully installed pip-22.1.1
+      ```
 
 1. Check currently installed packages:  
 `pip list`  
-  ```
-  PS C:\Users\User\Programming\pipenv-example-basic> pip list
-  Package    Version
-  ---------- -------
-  pip        22.1.1
-  setuptools 58.1.0
-  ```
+Sample output:  
+    ```
+    PS C:\Users\User\Programming\pipenv-example-basic> pip list
+    Package    Version
+    ---------- -------
+    pip        22.1.1
+    setuptools 58.1.0
+    ```
 
 ## Process:
 1. Install `pipenv`:  
@@ -101,5 +104,41 @@ Sample location:
 1. Add location of this specific `Scripts` directory `C:\Users\User\AppData\Roaming\Python\Python310\Scripts` to user `PATH` variable:  
   * Windows Key >> search 'path' >> select 'Edit the system environment variables' >> choose 'Environment Variables' button near bottom right >> double click 'path' line in 'User variables for User' >> click 'New' >> paste in absolute route copied previously into new line >> click 'OK' to close "Edit environment variable" dialogue >> click 'OK' to close "Environment variables" page >> click 'OK' to close "System Properties" page.
 
+1. Verify `pipenv` install:  
+`pipenv --version`  
+Sample output:  
+    ```
+    PS C:\Users\User\Programming> pipenv --version
+    pipenv: The term 'pipenv' is not recognized as a name of a cmdlet, function, script file, or executable program.
+    Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+    ```
 
+1. Restart terminal shell.
+
+1. Verify `pipenv` install:  
+`pipenv --version`  
+Sample output:  
+    ```
+    PS C:\Users\User\Programming> pipenv --version
+    pipenv, version 2022.5.2
+    ```
+
+1. Check new currently installed packages:  
+`pip list`  
+Sample output:  
+    ```
+    PS C:\Users\User\Programming> pip list
+    Package          Version
+    ---------------- -----------
+    certifi          2022.5.18.1
+    distlib          0.3.4
+    filelock         3.7.0
+    pip              22.1.1
+    pipenv           2022.5.2
+    platformdirs     2.5.2
+    setuptools       58.1.0
+    six              1.16.0
+    virtualenv       20.14.1
+    virtualenv-clone 0.5.7
+    ```
 
