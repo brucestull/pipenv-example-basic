@@ -24,7 +24,7 @@ Sample output:
     PS C:\Users\Bruce\Programming\pipenv-example-basic> pip list
     Package    Version
     ---------- -------
-    pip        22.1.1
+    pip        22.0.4
     setuptools 58.1.0
     ```
 
@@ -33,29 +33,29 @@ Sample output:
 `pip install --user pipenv`  
 Sample output:  
     ```
-    PS C:\Users\Bruce\Programming> pip install --user pipenv
+    PS C:\Users\Bruce\Programming\pipenv-example-basic> pip install --user pipenv
     Collecting pipenv
       Downloading pipenv-2022.5.2-py2.py3-none-any.whl (3.9 MB)
-        ---------------------------------------- 3.9/3.9 MB 14.8 MB/s eta 0:00:00
+        ---------------------------------------- 3.9/3.9 MB 9.3 MB/s eta 0:00:00
     Collecting virtualenv
       Downloading virtualenv-20.14.1-py2.py3-none-any.whl (8.8 MB)
-        ---------------------------------------- 8.8/8.8 MB 26.7 MB/s eta 0:00:00
+        ---------------------------------------- 8.8/8.8 MB 11.3 MB/s eta 0:00:00
     Requirement already satisfied: setuptools>=36.2.1 in c:\users\bruce\appdata\local\programs\python\python310\lib\site-packages (from pipenv) (58.1.0)
-    Collecting virtualenv-clone>=0.2.5
-      Downloading virtualenv_clone-0.5.7-py3-none-any.whl (6.6 kB)
-    Requirement already satisfied: pip>=22.0.4 in c:\users\bruce\appdata\local\programs\python\python310\lib\site-packages (from pipenv) (22.1.1)
     Collecting certifi
       Downloading certifi-2022.5.18.1-py3-none-any.whl (155 kB)
-        ---------------------------------------- 155.2/155.2 kB ? eta 0:00:00
+        ---------------------------------------- 155.2/155.2 KB 9.7 MB/s eta 0:00:00
+    Requirement already satisfied: pip>=22.0.4 in c:\users\bruce\appdata\local\programs\python\python310\lib\site-packages (from pipenv) (22.0.4)
+    Collecting virtualenv-clone>=0.2.5
+      Downloading virtualenv_clone-0.5.7-py3-none-any.whl (6.6 kB)
     Collecting six<2,>=1.9.0
       Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
-    Collecting distlib<1,>=0.3.1
-      Downloading distlib-0.3.4-py2.py3-none-any.whl (461 kB)
-        ---------------------------------------- 461.2/461.2 kB 30.1 MB/s eta 0:00:00
     Collecting filelock<4,>=3.2
       Downloading filelock-3.7.0-py3-none-any.whl (10 kB)
     Collecting platformdirs<3,>=2
       Downloading platformdirs-2.5.2-py3-none-any.whl (14 kB)
+    Collecting distlib<1,>=0.3.1
+      Downloading distlib-0.3.4-py2.py3-none-any.whl (461 kB)
+        ---------------------------------------- 461.2/461.2 KB 30.1 MB/s eta 0:00:00
     Installing collected packages: distlib, virtualenv-clone, six, platformdirs, filelock, certifi, virtualenv, pipenv
       WARNING: The script virtualenv-clone.exe is installed in 'C:\Users\Bruce\AppData\Roaming\Python\Python310\Scripts' which is not on PATH.
       Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
@@ -100,7 +100,7 @@ Sample location:
 Sample output:  
     Note: This notification is received since we added a new item to "PATH" and that change is not available to the current terminal session. So we start a new terminal session.
     ```
-    PS C:\Users\Bruce\Programming> pipenv --version
+    PS C:\Users\Bruce\Programming\pipenv-example-basic> pipenv --version
     pipenv: The term 'pipenv' is not recognized as a name of a cmdlet, function, script file, or executable program.
     Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
     ```
@@ -111,7 +111,7 @@ Sample output:
 `pipenv --version`  
 Sample output:  
     ```
-    PS C:\Users\Bruce\Programming> pipenv --version
+    PS C:\Users\Bruce\Programming\pipenv-example-basic> pipenv --version
     pipenv, version 2022.5.2
     ```
 
@@ -120,13 +120,13 @@ Sample output:
 `pip list`  
 Sample output:  
     ```
-    PS C:\Users\Bruce\Programming> pip list
+    PS C:\Users\Bruce\Programming\pipenv-example-basic> pip list
     Package          Version
     ---------------- -----------
     certifi          2022.5.18.1
     distlib          0.3.4
     filelock         3.7.0
-    pip              22.1.1
+    pip              22.0.4
     pipenv           2022.5.2
     platformdirs     2.5.2
     setuptools       58.1.0
