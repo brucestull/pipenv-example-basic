@@ -79,6 +79,7 @@ Sample output:
 
 1. Create `pipenv` virtual environment:  
 `pipenv install`  
+Sample output:
     ```
     PS C:\Users\Bruce\Programming\pipenv-example-basic> pipenv install
     Creating a virtualenv for this project...
