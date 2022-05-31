@@ -66,18 +66,36 @@ Sample output:
     Successfully installed certifi-2022.5.18.1 distlib-0.3.4 filelock-3.7.0 pipenv-2022.5.2 platformdirs-2.5.2 six-1.16.0 virtualenv-20.14.1 virtualenv-clone-0.5.7
     ```
 
-1. Note the `Scripts` location and copy it:  
+1. Note the 'WARNINGS's in output and copy the `Scripts` location provided:  
 Sample location:  
 `C:\Users\Bruce\AppData\Roaming\Python\Python310\Scripts`  
 
 1. Add location of this specific `Scripts` directory `C:\Users\Bruce\AppData\Roaming\Python\Python310\Scripts` to user `PATH` variable:  
   * Windows Key >> search 'path' >> select 'Edit the system environment variables' >> choose 'Environment Variables' button near bottom right >> double click 'path' line in 'User variables for User' >> click 'New' >> paste in absolute route copied previously into new line >> click 'OK' to save changes and close "Edit environment variable" page >> click 'OK' to close "Environment variables" page >> click 'OK' to close "System Properties" page.
 
-    * ![edit_system_environment_variables_choice](https://user-images.githubusercontent.com/47562501/170906540-c47125b3-4f33-4bbc-a407-2fc206a9008c.png)
+    1. Press "Windows Key", then search for "path", then choose "Edit the system environment variables":  
+        ![edit_system_environment_variables_choice](https://user-images.githubusercontent.com/47562501/171073588-e1dfd184-8042-43ed-9b30-27beafdfb606.png)
 
-    * ![environment_variables_button](https://user-images.githubusercontent.com/47562501/170906596-90fa146e-e74b-486f-97d4-23ed83b67c03.png)
+    1. Choose "Environment Variables" button near bottom right:  
+        ![environment_variables_button](https://user-images.githubusercontent.com/47562501/171073881-fb22f821-bd32-405a-8e51-75faa7338257.png)
 
-    * ![click_ok_to_close_system_properties_dialog](https://user-images.githubusercontent.com/47562501/170906732-3f11e3f1-7a24-44d8-9233-6f59d6598144.png)
+    1. Double click "Path" line in "User variables for User":  
+        ![click_path_variable](https://user-images.githubusercontent.com/47562501/171073998-80740273-66c4-4ebc-b895-ae656ff73e03.png)
+
+    1. Click the "New" button:  
+        ![click_the_new_button](https://user-images.githubusercontent.com/47562501/171074517-7a4e9b5d-06c7-45ee-90f9-aca9c286c3d0.png)
+
+    1. Paste the absolute route copied previously into the new line:  
+        ![add_scripts_directory_location_to_path](https://user-images.githubusercontent.com/47562501/171074613-4289709a-4a33-445f-bf44-d2280b87ccbe.png)
+
+    1. Click "OK" to save changes and close "Edit environment variable" page:  
+        ![click_ok_to_save_path](https://user-images.githubusercontent.com/47562501/171074756-ff56234e-676d-4f80-ad7e-54674f2da804.png)
+
+    1. Click 'OK' to close "Environment variables" page:  
+        ![click_ok_to_close_environment_variables_page](https://user-images.githubusercontent.com/47562501/171074909-f2644c51-66f8-4468-b477-b95d2dcd1bb6.png)
+
+    1. Click 'OK' to close "System Properties" page:  
+        ![click_ok_to_close_system_properties_page](https://user-images.githubusercontent.com/47562501/171074951-3b232a6c-aca7-449c-aa37-3a0dbdf20a2b.png)
 
 1. Verify `pipenv` install:  
 `pipenv --version`  
