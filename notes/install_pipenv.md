@@ -71,44 +71,43 @@ Sample location:
 `C:\Users\Bruce\AppData\Roaming\Python\Python310\Scripts`  
 
 1. Add location of this specific `Scripts` directory `C:\Users\Bruce\AppData\Roaming\Python\Python310\Scripts` to user `PATH` variable:  
-  * Windows Key >> search 'path' >> select 'Edit the system environment variables' >> choose 'Environment Variables' button near bottom right >> double click 'path' line in 'User variables for User' >> click 'New' >> paste in absolute route copied previously into new line >> click 'OK' to save changes and close "Edit environment variable" page >> click 'OK' to close "Environment variables" page >> click 'OK' to close "System Properties" page.
-
-    1. Press "Windows Key", then search for "path", then choose "Edit the system environment variables":  
+    * Press "Windows Key", then search for "path", then choose "Edit the system environment variables":  
         ![edit_system_environment_variables_choice](https://user-images.githubusercontent.com/47562501/171073588-e1dfd184-8042-43ed-9b30-27beafdfb606.png)
 
-    1. Choose "Environment Variables" button near bottom right:  
+    * Choose "Environment Variables" button near bottom right:  
         ![environment_variables_button](https://user-images.githubusercontent.com/47562501/171073881-fb22f821-bd32-405a-8e51-75faa7338257.png)
 
-    1. Double click "Path" line in "User variables for User":  
+    * Double click "Path" line in "User variables for User":  
         ![click_path_variable](https://user-images.githubusercontent.com/47562501/171073998-80740273-66c4-4ebc-b895-ae656ff73e03.png)
 
-    1. Click the "New" button:  
+    * Click the "New" button:  
         ![click_the_new_button](https://user-images.githubusercontent.com/47562501/171074517-7a4e9b5d-06c7-45ee-90f9-aca9c286c3d0.png)
 
-    1. Paste the absolute route copied previously into the new line:  
+    * Paste the absolute route copied previously into the new line:  
         ![add_scripts_directory_location_to_path](https://user-images.githubusercontent.com/47562501/171074613-4289709a-4a33-445f-bf44-d2280b87ccbe.png)
 
-    1. Click "OK" to save changes and close "Edit environment variable" page:  
+    * Click "OK" to save changes and close "Edit environment variable" page:  
         ![click_ok_to_save_path](https://user-images.githubusercontent.com/47562501/171074756-ff56234e-676d-4f80-ad7e-54674f2da804.png)
 
-    1. Click 'OK' to close "Environment variables" page:  
+    * Click 'OK' to close "Environment variables" page:  
         ![click_ok_to_close_environment_variables_page](https://user-images.githubusercontent.com/47562501/171074909-f2644c51-66f8-4468-b477-b95d2dcd1bb6.png)
 
-    1. Click 'OK' to close "System Properties" page:  
+    * Click 'OK' to close "System Properties" page:  
         ![click_ok_to_close_system_properties_page](https://user-images.githubusercontent.com/47562501/171074951-3b232a6c-aca7-449c-aa37-3a0dbdf20a2b.png)
 
 1. Verify `pipenv` install:  
 `pipenv --version`  
 Sample output:  
+    Note: This notification is received since we added a new item to "PATH" and that change is not available to the current terminal session. So we start a new terminal session.
     ```
     PS C:\Users\Bruce\Programming> pipenv --version
     pipenv: The term 'pipenv' is not recognized as a name of a cmdlet, function, script file, or executable program.
     Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
     ```
 
-1. Restart terminal shell.
+1. Start new terminal session.
 
-1. Verify `pipenv` install:  
+1. Verify `pipenv` is installed:  
 `pipenv --version`  
 Sample output:  
     ```
@@ -116,7 +115,8 @@ Sample output:
     pipenv, version 2022.5.2
     ```
 
-1. Check new currently installed packages:  
+1. Check new currently installed packages:
+  Note: We have about eight new packages installed due to installation of `pipenv`.  
 `pip list`  
 Sample output:  
     ```
@@ -135,5 +135,4 @@ Sample output:
     virtualenv-clone 0.5.7
     ```
 
-[Create `pipenv` virtual environment](create_pipenv_virtual_environment.md)
-[README.md](../README.md)
+1. Continue and [Create `pipenv` virtual environment](create_pipenv_virtual_environment.md) or go back to [README.md](../README.md).
