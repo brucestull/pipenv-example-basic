@@ -1,5 +1,5 @@
 # pipenv-example-basic
-* This example repository will guide user through creating a `pipenv` virtual environment. The virtual environment will not have any project specific packages installed. After finishing this process, the user should ensure the current terminal session is in project root and use `pipenv install PACKAGE` or `pipenv install PACKAGE==VERSION` to install needed packages.
+* This example repository will guide user through installing `pipenv` and creating a `pipenv` virtual environment. The virtual environment will not have any project specific packages installed. After finishing this process, the user should ensure the current terminal session is in project root and use `pipenv install PACKAGE` or `pipenv install PACKAGE==VERSION` to install needed packages.
 
 ## Resources:
 * https://pypi.org/project/pipenv/
