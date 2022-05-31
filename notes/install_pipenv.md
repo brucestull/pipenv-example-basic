@@ -70,7 +70,7 @@ Sample output:
 Sample location:  
 `C:\Users\Bruce\AppData\Roaming\Python\Python310\Scripts`  
 
-1. Add location of this specific `Scripts` directory `C:\Users\Bruce\AppData\Roaming\Python\Python310\Scripts` to user `PATH` variable:  
+1. Add location of your specific `Scripts` directory to user `PATH` variable:  
     * Press "Windows Key", then search for "path", then choose "Edit the system environment variables":  
         ![edit_system_environment_variables_choice](https://user-images.githubusercontent.com/47562501/171073588-e1dfd184-8042-43ed-9b30-27beafdfb606.png)
 
