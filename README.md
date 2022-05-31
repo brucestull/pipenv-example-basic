@@ -8,10 +8,11 @@
 ## Assumptions:
 1. User has functioning `python` installation.
 1. User has access to a command terminal.
+1. User is familiar with git concepts.
 
 ## Process:
 
-Note: I'm using PowerShell in a Windows environment for these examples.
+Note: I'm using PowerShell in a Windows environment for these examples. So I may be using some PowerShell-specific commands.
 
 1. [Install `pipenv`](notes/install_pipenv.md)
 
