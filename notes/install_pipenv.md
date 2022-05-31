@@ -115,7 +115,7 @@ Sample output:
     pipenv, version 2022.5.2
     ```
 
-1. Check new currently installed packages:
+1. Check new currently installed packages:  
   Note: We have about eight new packages installed due to installation of `pipenv`.  
 `pip list`  
 Sample output:  
