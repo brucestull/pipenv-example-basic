@@ -38,7 +38,7 @@ Sample output:
     virtualenv-clone 0.5.7
     ```
 
-1. Verify, using PowerShell, that current `python.exe` used is global. By 'global' I mean that it is not in an existing virtual environment. The `python.exe` is located in a default installation location. We will see below that the current `python.exe` will be a different installation when we are using the virtual environment:
+1. Verify, using PowerShell, that current `python.exe` used is global. By 'global' I mean that it is not in an existing virtual environment. The `python.exe` is located in a default installation location. We will see below that the current `python.exe` will be a different installation when we are using the virtual environment:  
 `Get-Command python | fl *`  
 Sample output:
     ```
@@ -77,7 +77,7 @@ Sample output:
 
 ## Process:
 
-1. Create `pipenv` virtual environment:
+1. Create `pipenv` virtual environment:  
 `pipenv install`  
     ```
     PS C:\Users\Bruce\Programming\pipenv-example-basic> pipenv install
@@ -103,14 +103,14 @@ Sample output:
     Alternatively, run a command inside the virtualenv with pipenv run.
     ```
 
-1. Note line with "Virtualenv location:", this is the location of our virtual environment. `pipenv install` will create a virtual environment directory which has the project directory name followed by a unique string.
-Note: The location of the virtual environment is not the same as the location of the code we will create for our project.
+1. Note line with "Virtualenv location:", this is the location of our virtual environment. `pipenv install` will create a virtual environment directory which has the project directory name followed by a unique string.  
+Note: The location of the virtual environment is not the same as the location of the code we will create for our project.  
 Sample line:
     ```
     Virtualenv location: C:\Users\Bruce\.virtualenvs\pipenv-example-basic-UBKsikLo
     ```
 
-1. Inspect current directory contents. Note presense of two new files: `Pipfile` and `Pipfile.lock`:
+1. Inspect current directory contents. Note presense of two new files: `Pipfile` and `Pipfile.lock`:  
 `ls`  
 Sample output:
     ```
@@ -127,7 +127,7 @@ Sample output:
     -a---           5/30/2022 10:18 PM            503 README.md
     ```
 
-1. Activate the virtual environment so we can investigate it:
+1. Activate the virtual environment so we can investigate it:  
 `pipenv shell`  
 Sample output:
     ```
@@ -140,7 +140,7 @@ Sample output:
     Type 'help' to get help.
     ```
 
-1. Investigate the installed packages of our virtual environment and note that they are different than those listed in global environment above:
+1. Investigate the installed packages of our virtual environment and note that they are different than those listed in global environment above:  
 `pip list`  
 Sample output:
     ```
@@ -152,8 +152,8 @@ Sample output:
     wheel      0.37.1
     ```
 
-1. We can check, using PowerShell command, which python installation we are using in our virtual environment:
-Note: The `python.exe` is located in our virtual environment, which is different than the global install noted above.
+1. We can check, using PowerShell command, which python installation we are using in our virtual environment:  
+Note: The `python.exe` is located in our virtual environment, which is different than the global install noted above.  
 `Get-Command python | fl *`  
 Sample output:
     ```
@@ -190,6 +190,6 @@ Sample output:
     ParameterSets      :
     ```
 
-1. We will now use `pipenv install PACKAGE` or `pipenv install PACKAGE==VERSION` to install any new packages so that `Pipfile` will automagically track and update packages and any desired specific versions.
+1. We will now use `pipenv install PACKAGE` or `pipenv install PACKAGE==VERSION` to install any new packages so that `Pipfile` will automagically track and update packages and any desired specific versions. The project repository now has a `pipenv` virtual environment set up and ready for installation of any packages needed for the project.
 
 [README.md](../README.md)
