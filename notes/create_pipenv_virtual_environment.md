@@ -222,4 +222,5 @@ Sample output:
         C:\Users\Bruce\.virtualenvs\pipenv-example-basic-UBKsikLo
         ```
 
+[Install `pipenv`](install_pipenv.md)
 [README.md](../README.md)
