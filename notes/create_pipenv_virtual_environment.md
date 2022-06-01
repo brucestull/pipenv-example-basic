@@ -222,5 +222,4 @@ Sample output:
         C:\Users\Bruce\.virtualenvs\pipenv-example-basic-UBKsikLo
         ```
 
-[Install `pipenv`](install_pipenv.md)
-[README.md](../README.md)
+Go back and read how to [install `pipenv`](install_pipenv.md) or go to [README.md](../README.md).
