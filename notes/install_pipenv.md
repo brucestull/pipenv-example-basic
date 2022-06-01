@@ -1,5 +1,9 @@
 # Install `pipenv`
 
+## TL;DR:
+* In a terminal session in project root:  
+`pip install --user pipenv`  
+
 ## Prepare (things to check before doing install):
 1. Verify `python` is installed:  
 `python --version`  
