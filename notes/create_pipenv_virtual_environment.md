@@ -2,7 +2,7 @@
 
 ## Prepare (things to check before creating virtual environment):
 
-1. Ensure our current terminal session is in project or repository root directory.
+1. Ensure our current terminal session is in same directory as `Pipfile` and `Pipfile.lock`, typically this is the root of the project repository.
 
 1. Investigate current directory contents:  
 `ls`  
@@ -104,14 +104,14 @@ Sample output:
     Alternatively, run a command inside the virtualenv with pipenv run.
     ```
 
-1. Note line with "Virtualenv location:", this is the location of our virtual environment. `pipenv install` will create a virtual environment directory which has the project directory name followed by a unique string.  
+1. Note line with "Virtualenv location:", this is the location of our virtual environment. `pipenv install` will create a virtual environment directory which has the project directory name followed by a dash and then a unique string.  
 Note: The location of the virtual environment is not the same as the location of the code we will create for our project.  
 Sample line:
     ```
     Virtualenv location: C:\Users\Bruce\.virtualenvs\pipenv-example-basic-UBKsikLo
     ```
 
-1. Inspect current directory contents. Note presense of two new files: `Pipfile` and `Pipfile.lock`:  
+1. Inspect current directory contents. Note presense of two new files: `Pipfile` and `Pipfile.lock`. These are the files which contain the `pipenv` configuration details for the project:  
 `ls`  
 Sample output:
     ```
@@ -191,6 +191,31 @@ Sample output:
     ParameterSets      :
     ```
 
-1. We will now use `pipenv install PACKAGE` or `pipenv install PACKAGE==VERSION` to install any new packages so that `Pipfile` will automagically track and update packages and any desired specific versions. The project repository now has a `pipenv` virtual environment set up and ready for installation of any packages needed for the project.
+1. We haven't installed any project specific packages.  
+    * We will now use `pipenv install PACKAGE` or `pipenv install PACKAGE==VERSION` to install any new packages so that `Pipfile` will automagically track and update packages and any desired specific versions.
+
+## Summary:
+* After following the previous steps, the user should have a `pipenv` virtual environment set up for their project:
+    * `pipenv` configuration files `Pipfile` and `Pipfile.lock` in project root.  
+    `ls`  
+    Sample output:  
+        ```
+        PS C:\Users\Bruce\Programming\pipenv-example-basic> ls
+
+            Directory: C:\Users\Bruce\Programming\pipenv-example-basic
+
+        Mode                 LastWriteTime         Length Name
+        ----                 -------------         ------ ----
+        d----          2022-05-30    22:44                notes
+        -a---          2022-05-29    03:59           1455 .gitignore
+        -a---          2022-05-30    22:44            150 Pipfile
+        -a---          2022-05-30    22:44            474 Pipfile.lock
+        -a---          2022-06-01    10:41            997 README.md
+        ```
+    * `pipenv` virtual environment created somewhere on their system:  
+    Sample location:  
+        ```
+        C:\Users\Bruce\.virtualenvs\pipenv-example-basic-UBKsikLo
+        ```
 
 [README.md](../README.md)
