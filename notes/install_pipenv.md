@@ -99,7 +99,7 @@ Sample location:
     * Click 'OK' to close "System Properties" page:  
         ![click_ok_to_close_system_properties_page](https://user-images.githubusercontent.com/47562501/171074951-3b232a6c-aca7-449c-aa37-3a0dbdf20a2b.png)
 
-1. Verify `pipenv` install:  
+1. Verify `pipenv` is installed:  
 `pipenv --version`  
 Sample output:  
     Note: This notification is received since we added a new item to "PATH" and that change is not available to the current terminal session. So we start a new terminal session.
