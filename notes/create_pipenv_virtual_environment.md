@@ -6,7 +6,7 @@
 
 ## Prepare (things to check before creating virtual environment):
 
-1. Ensure our current terminal session is in same directory as `Pipfile` and `Pipfile.lock`, typically this is the root of the project repository.
+1. Ensure our current terminal session is in the root of the project repository.
 
 1. Investigate current directory contents:  
 `ls`  
